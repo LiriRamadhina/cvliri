@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-yellow-950 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Projects</h1>
+      <nav class="hidden md:flex space-x-4">
+        <a href="index.html" class="hover:text-gray-300 transition">Home</a>
+        <a href="resume.html" class="hover:text-gray-300 transition">Resume</a>
+        <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container mx-auto mt-8 p-4">
+    <section id="portfolio" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Portofolio</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+         
+          <div class="bg-white shadow-lg p-4 text-center rounded hover:shadow-xl transition">
+            <h3 class="font-bold">Website Tailwindcss</h3>
+            <p>Melengkapi website kampus dengan icon, gallery, dan navigasi.</p>
+          </div>
+          <div class="bg-white shadow-lg p-4 text-center rounded hover:shadow-xl transition">
+            <h3 class="font-bold">Halaman web menggunakan Javascript</h3>
+            <p>Menambahkan animasi dan menu tarik turun.</p>
+          </div>
+          <div class="bg-white shadow-lg p-4 text-center rounded hover:shadow-xl transition">
+            <h3 class="font-bold">Menyimpan dan mengelola code dengan Github</h3>
+            <p>Mengupload hasil code ke Github.</p>
+          </div>
+          <div class="bg-white shadow p-4 text-center">
+            <h3 class="font-bold">Blog Platform Python</h3>
+            <p>Membuat variabel tipe data dan fungsi fungsi perulangan dan percabangan array</p>
+        </div>
+        <div class="bg-white shadow p-4 text-center">
+          <h3 class="font-bold">Menambahkan elemen elemen menggunakan HTML</h3>
+          <p>Menambahkan elemen header,footer, section, article dan nav</p>
+        </div>
+        <div class="bg-white shadow p-4 text-center">
+          <h3 class="font-bold">Postgres SQL</h3>
+          <p>Membuat dan mengisi table menggunakan Query
+            Membuat studi kasus table customer 
+            Mengelola dan memanipulasi data dengan SQL</p>
+      </div>
+    </section> 
+  </main>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+   
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');  
+    });
+  </script>  
+</body>
+</html>
