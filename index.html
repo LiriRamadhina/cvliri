@@ -8,7 +8,7 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-  <header class="bg-yellow-950 text-white p-4">
+  <header class="bg-yellow-950 text-white p-4 relative">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-xl font-bold">Liri Ramadhina Fadillah Nasrul</h1>
       <button id="menu-btn" class="md:hidden text-white focus:outline-none">
@@ -22,32 +22,43 @@
         <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
       </nav>
     </div>
+    
+    <nav id="mobile-menu" class="hidden absolute bg-yellow-950 w-full top-full left-0 p-4 md:hidden">
+      <ul class="space-y-2">
+        <li><a href="resume.html" class="block text-white hover:text-gray-300 transition">Resume</a></li>
+        <li><a href="projects.html" class="block text-white hover:text-gray-300 transition">Projects</a></li>
+        <li><a href="contact.html" class="block text-white hover:text-gray-300 transition">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   
   <main class="container mx-auto mt-8 p-4">
     <section id="about" class="mb-8">
-      
       <div class="flex items-center">
-        <img src="/images/jas.jpg" alt="Liri Ramadhina Fadillah Nasrul" class="w-32 h-32 rounded-full border-4 border-gray-300 mr-6">
+        <img src="./images/jas.jpg" alt="Liri Ramadhina Fadillah Nasrul" class="w-32 h-32 rounded-full border-4 border-gray-300 mr-6">
         <div>
           <h2 class="text-2xl font-bold mb-4">Programmer</h2>
-          <p> Liri Ramadhina Fadillah Nasrul adalah seorang programmer dengan pengalaman 1 tahun. Beliau juga
+          <p>Liri Ramadhina Fadillah Nasrul adalah seorang programmer dengan pengalaman 1 tahun. saya juga
             memiliki keterampilan sebagai programmer, desain, dan administrasi. Keterampilan tersebut terbukti oleh pengalaman
-            di berbagai proyek seperti desain aplikasi, tugas administrasi, dan mengembangkan
+            di berbagai project seperti desain aplikasi, tugas administrasi, dan mengembangkan
             program menggunakan bahasa pemrograman seperti Javascript dan Python.</p>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="bg-yellow-950 text-white py-4 mt-8">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2025 Liri Ramadhina Fadillah Nasrul.</p>
+    </div>
+  </footer>
   
-  <script src="scripts/script.js"></script>
   <script>
     const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-  
-   
+    const mobileMenu = document.getElementById('mobile-menu');
+
     menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');  
+      mobileMenu.classList.toggle('hidden');
     });
   </script>  
 </body>
